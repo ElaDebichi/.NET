@@ -1,0 +1,14 @@
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\EDConsoleApp.exe
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\EDConsoleApp.deps.json
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\EDConsoleApp.runtimeconfig.json
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\EDConsoleApp.runtimeconfig.dev.json
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\EDConsoleApp.dll
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\EDConsoleApp.pdb
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\EDConsoleApp.csproj.AssemblyReference.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\EDConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\EDConsoleApp.AssemblyInfoInputs.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\EDConsoleApp.AssemblyInfo.cs
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\EDConsoleApp.csproj.CoreCompileInputs.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\EDConsoleApp.dll
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\EDConsoleApp.pdb
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\EDConsoleApp.genruntimeconfig.cache

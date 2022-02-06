@@ -1,0 +1,17 @@
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\ED.Console.exe
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\ED.Console.deps.json
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\ED.Console.runtimeconfig.json
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\ED.Console.runtimeconfig.dev.json
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\ED.Console.dll
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\ED.Console.pdb
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\ED.domain.dll
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\bin\Debug\netcoreapp3.1\ED.domain.pdb
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.csproj.AssemblyReference.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.AssemblyInfoInputs.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.AssemblyInfo.cs
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.csproj.CoreCompileInputs.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.csproj.CopyComplete
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.dll
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.pdb
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\EDConsoleApp\obj\Debug\netcoreapp3.1\ED.Console.genruntimeconfig.cache

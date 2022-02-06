@@ -1,0 +1,10 @@
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\bin\Debug\netcoreapp3.1\ED.domain.deps.json
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\bin\Debug\netcoreapp3.1\ED.domain.dll
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\bin\Debug\netcoreapp3.1\ED.domain.pdb
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\obj\Debug\netcoreapp3.1\ED.domain.csproj.AssemblyReference.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\obj\Debug\netcoreapp3.1\ED.domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\obj\Debug\netcoreapp3.1\ED.domain.AssemblyInfoInputs.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\obj\Debug\netcoreapp3.1\ED.domain.AssemblyInfo.cs
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\obj\Debug\netcoreapp3.1\ED.domain.csproj.CoreCompileInputs.cache
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\obj\Debug\netcoreapp3.1\ED.domain.dll
+C:\666MOCHI\4twin\2nd semester\.NET\EDConsoleApp\ED.domain\obj\Debug\netcoreapp3.1\ED.domain.pdb
