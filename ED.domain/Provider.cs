@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ED.domain
 {
-    public class Provider
+    public class Provider : Concept
     {
         public static int count;
         public string confirmPassword;
@@ -61,6 +62,8 @@ namespace ED.domain
             set;
             get;
         }
+
+        public IList<Product> products { set; get; }
         public override string ToString()
         {
             //return base.ToString();
@@ -83,6 +86,75 @@ namespace ED.domain
         {
             isApproved = password == confirmPassword;
         }
+        public sealed override void getDetails()
+        {
+            System.Console.WriteLine("Nom: "+Nom+", email: "+Email+", products: ");
+            foreach (var prod in products)
+                Console.WriteLine(prod.ToString());
 
+        }
+
+
+        public IEnumerable<Product> GetProviderProducts(string filterType, string filterValue)
+        {
+           
+
+            foreach (var product in products)
+            {
+                if (filterType.ToUpper() == "DESCRIPTION")
+                    if (filterValue == product.Description)
+                       yield return product;
+                // products.Add(product);
+
+                if (filterType.ToUpper() == "DATEPROD")
+                    if (filterValue == product.DateProd.ToString())
+                        yield return product;
+                      //  products.Add(product);
+            }
+           
+
+        }
+         
+        public void GetProducts(string filterType, string filterValue)
+        {
+            IList<Product> products = new List<Product>();
+
+            foreach(var product in products)
+            {
+                if (filterType.ToUpper() == "DESCRIPTION")
+                    if (filterValue == product.Description)
+                        // yield product;
+                        products.Add(product);
+
+                if (filterType.ToUpper() == "DATEPROD")
+                    if (filterValue == product.DateProd.ToString())
+                        products.Add(product);
+
+                /*
+                   if (filterType.ToUpper() == "DATEPROD")
+                        if (DateTime.Parse(filterValue) == product.DateProd)
+                            products.Add(product);
+
+               
+                if (filterType.ToUpper() == "DATEPROD")
+
+                 DateTime datetime;
+                 DateTime.TryParse(filterValue, out datetime);
+                
+                    if (DateTime == product.DateProd)
+                        products.Add(product);
+                */
+
+                if (filterType.ToUpper() == "LABEL")
+                    if (filterValue == product.Label)
+                        products.Add(product);
+
+                if (filterType.ToUpper() == "PRICE")
+                    if (filterValue == product.Price.ToString())
+                        products.Add(product);
+            }
+            foreach (var product in products) 
+                Console.WriteLine(product.ToString());
+        }
     }
 }

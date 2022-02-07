@@ -14,9 +14,14 @@ namespace ED.domain
         {
             return base.ToString();
         }
-        public void GetMyType()
+        public new void GetMyType()
         {
             Console.WriteLine("this is a chemical product");
+        }
+        public sealed override void getDetails()
+        {
+            System.Console.WriteLine(ToString());
+
         }
     }
 }

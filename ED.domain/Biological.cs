@@ -10,10 +10,12 @@ namespace ED.domain
         public override string ToString()
         {
             return base.ToString();
+           // return $"{nameof(Biological)}: {Biological}";
         }
-        public void GetMyType()
+        public new void GetMyType()
         {
             Console.WriteLine("this is a biological product");
         }
+      
     } 
 }

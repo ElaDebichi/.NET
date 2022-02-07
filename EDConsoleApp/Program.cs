@@ -1,10 +1,12 @@
 ﻿using ED.domain;
 using System;
+using System.Collections.Generic;
 
 namespace EDConsoleApp
 {
     class Program
     {
+        /*
         public static void InputProduct(ref string product)
         {
             while (product == "")
@@ -44,6 +46,8 @@ namespace EDConsoleApp
             if (qnt != 0)
                 System.Console.WriteLine("Quantity: " + qnt);
         }
+
+        */
         public static void Main(string[] args)
         {
             /*
@@ -69,26 +73,57 @@ namespace EDConsoleApp
             Provider provider = new Provider();
             Provider provider1 = new Provider();
             Provider provider2 = new Provider();
-            Console.WriteLine(Provider.count);
+           // Console.WriteLine(Provider.count);
             provider.Id = 1;
             provider.Nom = "ela";
             provider.Email = "mary@gmail.com";
             provider.Password = "test123456";
             provider.ConfirmPassword = "test123456";
-            Console.WriteLine(provider);
             //Console.WriteLine(provider.Login("ela", "test123456"));
             //Console.WriteLine(provider.Login("ela", "test123456", "mary@gmail.com"));
-            bool isApp;
-            Provider.SetIsApproved(provider.ConfirmPassword, provider.Password, out isApp);
-            Console.WriteLine(provider.IsApproved);
+            //bool isApp;
+            //Provider.SetIsApproved(provider.ConfirmPassword, provider.Password, out isApp);
+            //Console.WriteLine(provider.IsApproved);
 
 
           //  Provider.SetIsApproved(provider);
            // Console.WriteLine(provider.IsApproved);
 
-            Product product = new Product();
-            product.GetMyType();
+            Product product1 = new Product();
+            product1.Label = "label1";
+            product1.Description = "description1";
+            product1.Price = 120;
+            //product1.GetMyType();
+            Product product2 = new Product();
+            product2.Label = "label2";
+            product2.Description = "description2";
+            product2.Price =265;
+           // product2.GetMyType();
+            Product product3 = new Product();
+            product3.Label = "label3";
+            product3.Description = "description3";
+            product3.Price = 354;
+          //  product3.GetMyType();
 
+            IList < Product > products = new List<Product>();
+
+            products.Add(product1);
+            products.Add(product2);
+            products.Add(product3);
+
+            provider.products = products;
+
+
+           provider.getDetails();
+
+            Product prod = new Product()
+            {
+                Description = "des",
+                Label = "label",
+                Price = 3445
+            };
+
+            provider.GetProducts("description", "description1");
 
 
         }
