@@ -126,6 +126,18 @@ namespace EDConsoleApp
             provider.GetProducts("description", "description1");
 
 
+
+            provider.Find = delegate (Product product) {
+                return null;
+            };
+
+
+            provider.Find.Invoke(null);
+        }
+        public IList<Product> FindSmth(Product product)
+        {
+            Console.WriteLine("findsmth");
+            return null;
         }
     }
 }

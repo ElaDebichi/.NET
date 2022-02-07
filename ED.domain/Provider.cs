@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace ED.domain
 {
+    public delegate IList<Product> Find (Product product); //Find is the Non Type Delegate
     public class Provider : Concept
     {
+
         public static int count;
         public string confirmPassword;
         public string password;
@@ -62,6 +64,8 @@ namespace ED.domain
             set;
             get;
         }
+
+        public Find Find { set; get; }
 
         public IList<Product> products { set; get; }
         public override string ToString()
