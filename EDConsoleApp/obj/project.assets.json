@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/ED.domain.dll": {}
         }
+      },
+      "ED.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ED.domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ED.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ED.Service.dll": {}
+        }
       }
     }
   },
@@ -19,10 +32,16 @@
       "type": "project",
       "path": "../ED.domain/ED.domain.csproj",
       "msbuildProject": "../ED.domain/ED.domain.csproj"
+    },
+    "ED.Service/1.0.0": {
+      "type": "project",
+      "path": "../ED.Service/ED.Service.csproj",
+      "msbuildProject": "../ED.Service/ED.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "ED.Service >= 1.0.0",
       "ED.domain >= 1.0.0"
     ]
   },
@@ -32,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\EDConsoleApp\\ED.Console.csproj",
+      "projectUniqueName": "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\EDConsoleApp\\ED.Console.csproj",
       "projectName": "ED.Console",
-      "projectPath": "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\EDConsoleApp\\ED.Console.csproj",
+      "projectPath": "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\EDConsoleApp\\ED.Console.csproj",
       "packagesPath": "C:\\Users\\morbi\\.nuget\\packages\\",
-      "outputPath": "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\EDConsoleApp\\obj\\",
+      "outputPath": "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\EDConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\morbi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +71,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj": {
-              "projectPath": "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj"
+            "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj": {
+              "projectPath": "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj"
+            },
+            "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.Service\\ED.Service.csproj": {
+              "projectPath": "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.Service\\ED.Service.csproj"
             }
           }
         }

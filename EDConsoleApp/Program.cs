@@ -1,4 +1,5 @@
 ﻿using ED.domain;
+using ED.Service;
 using System;
 using System.Collections.Generic;
 
@@ -48,6 +49,20 @@ namespace EDConsoleApp
         }
 
         */
+
+        public static List<Product> FindProductFN(string l, List<Product> list)
+        {
+            List<Product> list1 = new List<Product>();
+            foreach (var item in list)
+            {
+                if (item.Label.StartsWith(l))
+                {
+                    list1.Add(item);
+
+                }
+            }
+            return list1;
+        }
         public static void Main(string[] args)
         {
             /*
@@ -86,30 +101,49 @@ namespace EDConsoleApp
             //Console.WriteLine(provider.IsApproved);
 
 
-          //  Provider.SetIsApproved(provider);
-           // Console.WriteLine(provider.IsApproved);
+            //  Provider.SetIsApproved(provider);
+            // Console.WriteLine(provider.IsApproved);
 
+////////////////categories///////////////////////////////////////
+            Category category1 = new Category();
+            category1.categoryId = 1;
+            category1.name = "clothes";
+
+            Category category2 = new Category();
+            category2.categoryId = 1;
+            category2.name = "fruits";
+
+            Category category3 = new Category();
+            category3.categoryId = 1;
+            category3.name = "electro";
+
+////////////////products///////////////////////////////////////////////
             Product product1 = new Product();
-            product1.Label = "label1";
+            product1.Label = "coffee maker";
             product1.Description = "description1";
             product1.Price = 120;
+            product1.category = category1;
+
             //product1.GetMyType();
             Product product2 = new Product();
-            product2.Label = "label2";
+            product2.Label = "apple";
             product2.Description = "description2";
             product2.Price =265;
-           // product2.GetMyType();
-            Product product3 = new Product();
-            product3.Label = "label3";
+            product1.category= category2;
+             // product2.GetMyType();
+
+             Product product3 = new Product();
+            product3.Label = "shirt";
             product3.Description = "description3";
             product3.Price = 354;
-          //  product3.GetMyType();
+            product1.category= category3;
+             //  product3.GetMyType();
 
-            IList < Product > products = new List<Product>();
+            List < Product > products = new List<Product>();
 
             products.Add(product1);
-            products.Add(product2);
-            products.Add(product3);
+           
+            
 
             provider.products = products;
 
@@ -130,10 +164,50 @@ namespace EDConsoleApp
             provider.Find = delegate (Product product) {
                 return null;
             };
-
-
             provider.Find.Invoke(null);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            ProjectManagement pm = new ProjectManagement();
+            pm.Products = products;
+             pm.FindProduct = FindProductFN;
+             pm.FindProduct("a", products);
+             pm.FindProductByFirstChar("a", FindProductFN);
+            /*pm.FindProductByFirstChar("a",
+                (string l, List<Product> list) =>
+                {
+                    List<Product> list1 = new List<Product>();
+                    foreach (var item in list)
+                    {
+                        if (item.Label.StartsWith(l))
+                        { list1.Add(item); }
+                    }
+                    return list1;
+                }
+               );*/
+
+
+            pm.UpperName();
+            Console.WriteLine("List of products in PM: ");
+
+            foreach (var item in pm.Products)
+            {
+                Console.Write("Label: ");
+                Console.WriteLine(item.Label);
+                Console.Write("Category: ");
+                Console.WriteLine(item.category.name);
+
+            }
+            Console.WriteLine("In Category: ");
+            Console.WriteLine(pm.InCategory("electro"));
+
+
         }
+
+
+
+
         public IList<Product> FindSmth(Product product)
         {
             Console.WriteLine("findsmth");

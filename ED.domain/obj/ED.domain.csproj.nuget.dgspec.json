@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj": {}
+    "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj": {}
   },
   "projects": {
-    "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj": {
+    "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj",
+        "projectUniqueName": "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj",
         "projectName": "ED.domain",
-        "projectPath": "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj",
+        "projectPath": "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.domain\\ED.domain.csproj",
         "packagesPath": "C:\\Users\\morbi\\.nuget\\packages\\",
-        "outputPath": "C:\\666MOCHI\\4twin\\2nd semester\\.NET\\EDConsoleApp\\ED.domain\\obj\\",
+        "outputPath": "C:\\666MOCHI\\4twin\\2nd\\.NET\\EDConsoleApp\\ED.domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\morbi\\AppData\\Roaming\\NuGet\\NuGet.Config",

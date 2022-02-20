@@ -41,6 +41,7 @@ namespace ED.domain
             set;
             get;
         }
+        public virtual Category category { set; get; }
         public IList<Provider> providers { set; get; }
 
         public override string ToString()

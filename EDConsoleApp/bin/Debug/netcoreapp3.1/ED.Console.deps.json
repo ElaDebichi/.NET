@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "ED.Console/1.0.0": {
         "dependencies": {
+          "ED.Service": "1.0.0",
           "ED.domain": "1.0.0"
         },
         "runtime": {
@@ -17,6 +18,14 @@
       "ED.domain/1.0.0": {
         "runtime": {
           "ED.domain.dll": {}
+        }
+      },
+      "ED.Service/1.0.0": {
+        "dependencies": {
+          "ED.domain": "1.0.0"
+        },
+        "runtime": {
+          "ED.Service.dll": {}
         }
       }
     }
@@ -28,6 +37,11 @@
       "sha512": ""
     },
     "ED.domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ED.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
