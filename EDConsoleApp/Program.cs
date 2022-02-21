@@ -201,6 +201,13 @@ namespace EDConsoleApp
             }
             Console.WriteLine("In Category: ");
             Console.WriteLine(pm.InCategory("electro"));
+            ////////////////////////////////////////////////////////////////////////////////////
+
+            Chemical ch1 = new Chemical();
+            ch1.City = "tunis";
+            Chemical ch2 = new Chemical();
+            ch.City = "ariana";
+
 
 
         }

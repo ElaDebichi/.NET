@@ -1,0 +1,63 @@
+delegate void Condition (product p);
+func<product,bool>
+
+List<product> Find (func<product,bool> c)
+{
+List<product> list=new list<product>();
+foreach(var p in products)
+if(c(p) == true)
+{ 
+	list.Add(p);
+	}
+	return list;
+}
+
+_______________________________________________________________
+syntaxe de requete:
+//IEnumerable< a >// var query = 
+		from p in products
+		where p.name == "a"
+		select new {p.name, p.price};
+
+a : type anonyme
+a{
+	string name,
+	double price
+	};
+
+
+compilation => syntaxe de méthode:
+var query=
+		products.
+		where(p=>p.name=="a")
+		select(p=>p);(optional)
+		select(p=>p.name);(optional)
+		select(p=>	new {p.name,p.price});(optional)
+
+_________________________________________________________________
+
+Selection:
+- First: 1er element 
+- Last: le dernier
+- ElementAt(k):
+- Single()
+- OfType < > () : récupérer une collection d’objets d’un type donné
+
+Agregation:
+...
+
+tri:
+
+var query=
+		products.
+		where(p=>p.name=="a")
+		.orderBy(p=>p.name)
+		.orderByDescending(p=>p.name)
+		select(p=>p);(optional)
+		select(p=>p.name);(optional)
+		select(p=>	new {p.name,p.price});(optional)
+
+GroupBy:
+...
+
+IEnumerable <IGrouping<string,Product>>
