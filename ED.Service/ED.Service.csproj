@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ED.Data\ED.Data.csproj" />
     <ProjectReference Include="..\ED.domain\ED.domain.csproj" />
   </ItemGroup>
 

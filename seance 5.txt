@@ -60,4 +60,8 @@ var query=
 GroupBy:
 ...
 
-IEnumerable <IGrouping<string,Product>>
+_____________________________________________________________________
+
+ORM : Mapping DB/Object
+
+

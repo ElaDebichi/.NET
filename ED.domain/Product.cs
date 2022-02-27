@@ -7,40 +7,17 @@ namespace ED.domain
     public class Product : Concept
     {
 
-        public int ProductId
-        {
-            // set{ id = value; }
-            // get{ return id; }
+        public int ProductId{// set{ id = value; } get{ return id; }
+            set;
+            get;}
+        public DateTime DateProd {set; get;}
+        public string Description {set; get;}
+        public string Label {set; get;}
+        public double Price {set; get;}
+        public int Quantity {set; get;}
 
-            set;
-            get;
-        }
-        public DateTime DateProd
-        {
-            set;
-            get;
+        public string ImageName { get; set; }
 
-        }
-        public string Description
-        {
-            set;
-            get;
-        }
-        public string Label
-        {
-            set;
-            get;
-        }
-        public double Price
-        {
-            set;
-            get;
-        }
-        public int Quantity
-        {
-            set;
-            get;
-        }
         public virtual Category category { set; get; }
         public IList<Provider> providers { set; get; }
 

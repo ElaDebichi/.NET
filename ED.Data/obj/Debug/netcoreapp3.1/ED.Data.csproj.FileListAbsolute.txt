@@ -1,0 +1,16 @@
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\bin\Debug\netcoreapp3.1\ED.Data.deps.json
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\bin\Debug\netcoreapp3.1\ED.Data.dll
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\bin\Debug\netcoreapp3.1\ED.Data.pdb
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\bin\Debug\netcoreapp3.1\ED.domain.dll
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\bin\Debug\netcoreapp3.1\ED.domain.pdb
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.csproj.AssemblyReference.cache
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.AssemblyInfoInputs.cache
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.AssemblyInfo.cs
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.csproj.CoreCompileInputs.cache
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.csproj.CopyComplete
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.dll
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.pdb
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\bin\Debug\netcoreapp3.1\ED.Data.runtimeconfig.json
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\bin\Debug\netcoreapp3.1\ED.Data.runtimeconfig.dev.json
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Data\obj\Debug\netcoreapp3.1\ED.Data.genruntimeconfig.cache

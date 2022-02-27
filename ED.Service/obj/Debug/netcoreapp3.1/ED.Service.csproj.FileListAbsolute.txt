@@ -11,3 +11,5 @@ C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Service\obj\Debug\netcoreapp3.1\ED.Se
 C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Service\obj\Debug\netcoreapp3.1\ED.Service.csproj.CopyComplete
 C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Service\obj\Debug\netcoreapp3.1\ED.Service.dll
 C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Service\obj\Debug\netcoreapp3.1\ED.Service.pdb
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Service\bin\Debug\netcoreapp3.1\ED.Data.dll
+C:\666MOCHI\4twin\2nd\.NET\EDConsoleApp\ED.Service\bin\Debug\netcoreapp3.1\ED.Data.pdb

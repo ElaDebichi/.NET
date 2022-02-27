@@ -161,19 +161,23 @@ namespace EDConsoleApp
 
 
 
-            provider.Find = delegate (Product product) {
+            /*provider.Find = delegate (Product product)
+            {
                 return null;
             };
-            provider.Find.Invoke(null);
+            provider.Find.Invoke(null);*/
+
+            //=>> This is commented because it envoked the following error:
+            //No suitable constructor was found for entity type 'Find'. The following constructors had parameters that could not be bound to properties of the entity type: cannot bind 'object', 'method' in 'Find(object object, IntPtr method)'.
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             ProjectManagement pm = new ProjectManagement();
             pm.Products = products;
-             pm.FindProduct = FindProductFN;
-             pm.FindProduct("a", products);
-             pm.FindProductByFirstChar("a", FindProductFN);
+             //pm.FindProduct = FindProductFN;
+             //pm.FindProduct("a", products);
+             //pm.FindProductByFirstChar("a", FindProductFN);
             /*pm.FindProductByFirstChar("a",
                 (string l, List<Product> list) =>
                 {
@@ -206,9 +210,12 @@ namespace EDConsoleApp
             Chemical ch1 = new Chemical();
             ch1.City = "tunis";
             Chemical ch2 = new Chemical();
-            ch.City = "ariana";
-
-
+            ch2.City = "ariana";
+            /////////////////////////////////////////////////////////////////////////////////
+            
+            Context context = new Context();
+            Console.ReadKey();
+            context.SaveChanges(); //persist
 
         }
 

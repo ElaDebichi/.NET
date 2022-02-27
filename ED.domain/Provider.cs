@@ -65,7 +65,10 @@ namespace ED.domain
             get;
         }
 
-        public Find Find { set; get; }
+        //public Find Find { set; get; }
+        //=>> This is commented because it envoked the following error:
+        //No suitable constructor was found for entity type 'Find'. The following constructors had parameters that could not be bound to properties of the entity type: cannot bind 'object', 'method' in 'Find(object object, IntPtr method)'.
+
 
         public IList<Product> products { set; get; }
         public override string ToString()

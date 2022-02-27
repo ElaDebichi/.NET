@@ -100,7 +100,7 @@ namespace ED.Service
                     
 
         }*/
-        public List<IGrouping<String,Chemical>> GetChemicalGroupByCity()
+        public List<IGrouping<String,Chemical>> GetChemicalGroupByCity1()
         {
             return Products
                     .OfType<Chemical>()
@@ -111,8 +111,7 @@ namespace ED.Service
                     
 
         }
-
-
+        
 
 
 
