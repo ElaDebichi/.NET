@@ -2,24 +2,28 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 
+
 namespace ED.Service
 {
     public class Context : DbContext
     {
-        DbSet<Product> Products { get; set; }
-        DbSet<Provider> Providers { get; set; }
-        DbSet<Chemical> Chemicals { get; set; }
-        DbSet<Biological> Biologicals { get; set; }
-        DbSet<Category> Categories { get; set; }
-
         public Context()
         {
-           // Database.EnsureCreated();
+            Database.EnsureCreated();
         }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Provider> Providers { get; set; }
+        public DbSet<Chemical> Chemicals { get; set; }
+        public DbSet<Biological> Biologicals { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"data source = (localdb)\MSSQLlocalDB;initial catalog=ProductStore;Integrated Security = True;");
+            //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllodcaldb;Initial Catalog=GestionCompteDB;Integrated Security=true");
+            optionsBuilder.UseSqlServer(@"Server=localhost;Database=master;Trusted_Connection=True;");
             base.OnConfiguring(optionsBuilder);
         }
     }

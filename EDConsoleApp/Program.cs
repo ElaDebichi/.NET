@@ -213,9 +213,20 @@ namespace EDConsoleApp
             ch2.City = "ariana";
             /////////////////////////////////////////////////////////////////////////////////
             
-            Context context = new Context();
+            
             Console.ReadKey();
-            context.SaveChanges(); //persist
+            var context = new Context();
+            
+                //Create
+                System.Console.WriteLine("Create");
+                //Instancier un objet product
+                Product p = new Product();
+                p.Label = "shirt";
+                //Ajouter l'objet au DBSET
+                context.Products.Add(p);
+                //Persister les données
+                context.SaveChanges();
+            
 
         }
 
