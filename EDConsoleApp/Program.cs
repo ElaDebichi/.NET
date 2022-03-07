@@ -108,15 +108,16 @@ namespace EDConsoleApp
 
             /////categories///////////////////////////////////////
             Category category1 = new Category();
-            category1.categoryId = 1;
+            
             category1.name = "clothes";
 
             Category category2 = new Category();
-            category2.categoryId = 1;
+           
+
             category2.name = "fruits";
 
             Category category3 = new Category();
-            category3.categoryId = 1;
+            
             category3.name = "electro";
 
             ////products///////////////////////////////////////////////
@@ -161,10 +162,10 @@ namespace EDConsoleApp
 
             provider.GetProducts("description", "description1");
 
-            Chemical ch1 = new Chemical();
+            /*Chemical ch1 = new Chemical();
             ch1.City = "tunis";
             Chemical ch2 = new Chemical();
-            ch2.City = "ariana";
+            ch2.City = "ariana";*/
 
 
             #endregion
@@ -230,6 +231,14 @@ namespace EDConsoleApp
                 context.Products.Add(p);
                 //Persist data
                 context.SaveChanges();
+
+            #endregion
+
+            #region Add DB
+            Context c = new Context();
+            c.Products.Add(product1);
+            c.SaveChanges();
+
             #endregion
 
         }

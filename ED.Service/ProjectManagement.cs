@@ -72,22 +72,22 @@ namespace ED.Service
                       .Max(p => p.Price);
 
         }
-        public int GetCountProduct(string city)
+        /*public int GetCountProduct(string city)
         {
             return Products
                     .OfType<Chemical>()
                     .Where(p => p.City == city)
                     .Count();
 
-        }
-        public List<Chemical> GetChemicalCity()
+        }*/
+       /* public List<Chemical> GetChemicalCity()
         {
             return Products
                     .OfType<Chemical>()
                     .OrderBy(p => p.City)
                     .ToList();
 
-        }
+        }*/
         /*public List<List<Chemical>> GetChemicalGroupByCity()
         {
             return Products
@@ -100,7 +100,7 @@ namespace ED.Service
                     
 
         }*/
-        public List<IGrouping<String,Chemical>> GetChemicalGroupByCity1()
+        /*public List<IGrouping<String,Chemical>> GetChemicalGroupByCity1()
         {
             return Products
                     .OfType<Chemical>()
@@ -110,7 +110,7 @@ namespace ED.Service
 
                     
 
-        }
+        }*/
         
 
 

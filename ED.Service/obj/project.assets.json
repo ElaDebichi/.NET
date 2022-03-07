@@ -1502,7 +1502,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.11"
+          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.11"
         },
         "compile": {
           "bin/placeholder/ED.domain.dll": {}

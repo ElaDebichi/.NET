@@ -11,8 +11,7 @@ namespace ED.domain
     {
 
         public string LabName { get; set; }
-        public string City { get; set; }
-        public string StreetAdress { get; set; }
+        public Adress Adress { get; set; }
         public override string ToString()
         {
             return base.ToString();
