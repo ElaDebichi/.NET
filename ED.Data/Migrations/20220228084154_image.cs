@@ -2,7 +2,7 @@
 
 namespace ED.Data.Migrations
 {
-    public partial class ela1 : Migration
+    public partial class image : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

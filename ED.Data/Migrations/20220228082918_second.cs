@@ -2,22 +2,22 @@
 
 namespace ED.Data.Migrations
 {
-    public partial class ModifyNameImage : Migration
+    public partial class second : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "Image",
-                table: "Products",
-                newName: "ImageName");
+            migrationBuilder.DropColumn(
+                name: "ImageName",
+                table: "Products");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
+            migrationBuilder.AddColumn<string>(
                 name: "ImageName",
                 table: "Products",
-                newName: "Image");
+                type: "nvarchar(max)",
+                nullable: true);
         }
     }
 }

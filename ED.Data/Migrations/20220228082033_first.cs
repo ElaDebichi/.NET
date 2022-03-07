@@ -2,7 +2,7 @@
 
 namespace ED.Data.Migrations
 {
-    public partial class gest : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

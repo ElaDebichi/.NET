@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ED.domain
 {
@@ -15,20 +17,13 @@ namespace ED.domain
         {
             count++;
         }
-        public int Id
-        {
-            // set{ id = value; }
-            // get{ return id; }
-
-            set;
-            get;
-        }
+        [Key]
+        public int Id {set; get;} //propriété khater feha get w set sinn attribut 
         public string Nom
-        {
-            set;
-            get;
-
-        }
+        {set; get;}
+        [DataType(DataType.Password),
+            MinLength(8),
+            Required]
         public string Password
         {
             set
@@ -41,6 +36,7 @@ namespace ED.domain
             get { return password; }
 
         }
+        [Compare("Password"), NotMapped]
         public string ConfirmPassword
         {
             set
@@ -54,6 +50,7 @@ namespace ED.domain
             }
             get { return confirmPassword; }
         }
+        [Required, EmailAddress]
         public string Email
         {
             set;

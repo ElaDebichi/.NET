@@ -65,6 +65,7 @@ namespace EDConsoleApp
         }
         public static void Main(string[] args)
         {
+            #region Starting
             /*
             string product = "", product2 = "";
             double price, price2;
@@ -84,7 +85,8 @@ namespace EDConsoleApp
             string result = (n > 0) ? "Greater than 0" : "Not greater than 0";
             Console.WriteLine("{0} is {1}", n, result);
             */
-
+            #endregion
+            #region Creating objects
             Provider provider = new Provider();
             Provider provider1 = new Provider();
             Provider provider2 = new Provider();
@@ -104,7 +106,7 @@ namespace EDConsoleApp
             //  Provider.SetIsApproved(provider);
             // Console.WriteLine(provider.IsApproved);
 
-////////////////categories///////////////////////////////////////
+            /////categories///////////////////////////////////////
             Category category1 = new Category();
             category1.categoryId = 1;
             category1.name = "clothes";
@@ -117,7 +119,7 @@ namespace EDConsoleApp
             category3.categoryId = 1;
             category3.name = "electro";
 
-////////////////products///////////////////////////////////////////////
+            ////products///////////////////////////////////////////////
             Product product1 = new Product();
             product1.Label = "coffee maker";
             product1.Description = "description1";
@@ -145,7 +147,7 @@ namespace EDConsoleApp
            
             
 
-            provider.products = products;
+           provider.products = products;
 
 
            provider.getDetails();
@@ -159,8 +161,15 @@ namespace EDConsoleApp
 
             provider.GetProducts("description", "description1");
 
+            Chemical ch1 = new Chemical();
+            ch1.City = "tunis";
+            Chemical ch2 = new Chemical();
+            ch2.City = "ariana";
 
 
+            #endregion
+
+            #region delegate
             /*provider.Find = delegate (Product product)
             {
                 return null;
@@ -169,9 +178,9 @@ namespace EDConsoleApp
 
             //=>> This is commented because it envoked the following error:
             //No suitable constructor was found for entity type 'Find'. The following constructors had parameters that could not be bound to properties of the entity type: cannot bind 'object', 'method' in 'Find(object object, IntPtr method)'.
+            #endregion
 
-
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////
+            #region ProjectManagement
 
             ProjectManagement pm = new ProjectManagement();
             pm.Products = products;
@@ -205,39 +214,33 @@ namespace EDConsoleApp
             }
             Console.WriteLine("In Category: ");
             Console.WriteLine(pm.InCategory("electro"));
-            ////////////////////////////////////////////////////////////////////////////////////
+            #endregion
 
-            Chemical ch1 = new Chemical();
-            ch1.City = "tunis";
-            Chemical ch2 = new Chemical();
-            ch2.City = "ariana";
-            /////////////////////////////////////////////////////////////////////////////////
-            
-            
+            #region Database
+
             Console.ReadKey();
             var context = new Context();
             
                 //Create
                 System.Console.WriteLine("Create");
-                //Instancier un objet product
+                //Instance 
                 Product p = new Product();
                 p.Label = "shirt";
-                //Ajouter l'objet au DBSET
+                //add obj to DBSET
                 context.Products.Add(p);
-                //Persister les données
+                //Persist data
                 context.SaveChanges();
-            
+            #endregion
 
         }
 
-
-
-
+        #region find
         public IList<Product> FindSmth(Product product)
         {
             Console.WriteLine("findsmth");
             return null;
         }
+        #endregion
     }
 }
 

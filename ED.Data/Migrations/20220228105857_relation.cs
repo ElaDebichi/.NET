@@ -2,7 +2,7 @@
 
 namespace ED.Data.Migrations
 {
-    public partial class last : Migration
+    public partial class relation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
